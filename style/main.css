@@ -1,0 +1,111 @@
+:root{  /*declaração de variável na raiz do documento*/
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; /*o limite de tudo que estiver dentro será a borda da caixa */
+}
+
+/*elemento base*/
+
+body{
+    background: var(--preta); /*utilizando a cor declarada na variavel*/
+    font-family: 'Arial', Times, serif;
+    color:white;
+}
+
+header .container{
+    display: flex; /*alinha os elementos*/
+    flex-direction: row; /*alinha os elementos */
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+header .logo{
+    margin-left: 5px; 
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*Filme Principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');
+   
+
+    height: 400px;
+    background-size: cover; /*vai ficar do tamanho da area de cobertura*/
+    
+    
+    display: flex; /*alinha os elementos*/
+    flex-direction: column; /*alinha os elementos */
+    justify-content: center; /*vertical*/
+    align-items: flex-start; /*horizontal*/
+
+}
+
+.filme-principal .descricao{
+    margin-bottom: 90px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(5, 4, 4, 0.5);  /*com efeito transparencia*/
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all; /*cuida da animacao entre as transicoes*/
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 40%;
+}
+
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrousel-filmes{
+    margin-top: 5px;
+}
